@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b721405-7a80-4196-a63f-36a31ee899a7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1fWnbEIbP7vpYndBNtILWU4FiXM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="admin server" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Project_StockMarket" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="G:\Project_StockMarket\admin-server\src\main\java\com\vasanth\admin\server\AdminServerApplication.java" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b721405-7a80-4196-a63f-36a31ee899a7" name="Default Changelist" comment="" />
+      <created>1596342785291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596342785291</updated>
+      <workItem from="1596342787463" duration="302000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="195" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596343016197">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="195" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.736@0.0.1366.736" timestamp="1596343016197" />
+    <state x="536" y="149" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596342941535">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="536" y="149" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.736@0.0.1366.736" timestamp="1596342941535" />
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom" timestamp="1596343101631">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1596343101631" />
+    <state width="1323" height="181" key="GridCell.Tab.0.center" timestamp="1596343101631">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1596343101631" />
+    <state width="1323" height="181" key="GridCell.Tab.0.left" timestamp="1596343101631">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1596343101631" />
+    <state width="1323" height="181" key="GridCell.Tab.0.right" timestamp="1596343101631">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1596343101631" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1596343045501">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1596343045501" />
+  </component>
+</project>

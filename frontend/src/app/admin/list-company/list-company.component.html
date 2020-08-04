@@ -1,0 +1,96 @@
+
+
+  <div >
+    <h1>List of users</h1>
+    <table class="table table-striped " style="float: left;">
+      <thead>
+      <tr>
+        <th>companyName</th>
+        <th>ceo</th>
+        <th>boardOfDirectors</th>
+        <th>listedInStockExchanges</th>
+        <th>sector</th>
+        <th>briefWriteUpe</th>
+        <th>stockCode</th>
+        <th>delete</th>
+        <th>change</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let company of companylist">
+        <td>{{company.name}}</td>
+        <td>{{company.ceo}}</td>
+        <td>{{company.boardOfDirectors}}</td>
+        <td>{{company.listedInStockExchanges}}</td>
+        <td>{{company.sector}}</td>
+        <td>{{company.briefWriteUp}}</td>
+        <td>{{company.stockCode}}</td>
+        <td><button class="btn btn-danger" (click)="delete(company)">delete</button></td>
+        <td><button class="btn btn-success" (click)="setFrame(company)">change</button></td>
+        <!-- <td class="text-center"><button class="btn btn-danger btn-xs" (click)="delteUser(user.id)"><span class="glyphicon glyphicon-remove"></span> Delete</button></td> -->
+      </tr>
+      </tbody>
+    </table>
+    <hr>
+    <button class="btn btn-primary" (click)="addVisible=true">Add new Company</button>
+  </div>
+
+  <div *ngIf="visible" >
+    <div class="container" style="width: 40%;float: left" >
+      <button type="button" class="close" aria-label="Close" (click)="visible=false">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div >
+        <h2 >Edit Company</h2>
+      </div>
+      <form >
+        <label for="Name">Company name</label><br>
+        <input type="text" [(ngModel)]="company.name" name="id" id="name"><br>
+        <label for="fName">Ceo</label><br>
+        <input type="text" [(ngModel)]="company.ceo" name="first" id="fname"><br>
+        <label for="lName">Board of Directors</label><br>
+        <input type="text" [(ngModel)]="company.boardOfDirectors" name="la" id="lname"><br>
+        <label for="wName">listed in stock exchanges</label><br>
+        <input type="text" [(ngModel)]="company.listedInStockExchanges" name="firs" id="wname"><br>
+        <label for="eName">Sector </label><br>
+        <input type="text" [(ngModel)]="company.sector" name="fir" id="ename"><br>
+        <label for="aa">Brief Write up</label><br>
+        <input style="height: 80px" type="text" [(ngModel)]="company.briefWriteUp" name="fir" id="aa"><br>
+        <label for="bb">Stock Code</label><br>
+        <input type="text" [(ngModel)]="company.stockCode" name="fir" id="bb"><br><hr>
+        <input class="btn btn-success" type="submit" (click)="edit()">
+      </form>
+    </div>
+  </div>
+
+
+
+<br>
+  <div *ngIf="addVisible" >
+    <div class="container" style="width: 40%;float: left" >
+      <button type="button" class="close" aria-label="Close" (click)="addVisible=false">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div >
+        <h2 >Add company</h2>
+      </div>
+      <form >
+        <label for="Name">Company name</label><br>
+        <input type="text" [(ngModel)]="company.name" name="id" id="name"><br>
+        <label for="fName">Ceo</label><br>
+        <input type="text" [(ngModel)]="company.ceo" name="first" id="fname"><br>
+        <label for="lName">Board of Directors</label><br>
+        <input type="text" [(ngModel)]="company.boardOfDirectors" name="la" id="lname"><br>
+        <label for="wName">listed in stock exchanges</label><br>
+        <input type="text" [(ngModel)]="company.listedInStockExchanges" name="firs" id="wname"><br>
+        <label for="eName">Sector </label><br>
+        <input type="text" [(ngModel)]="company.sector" name="fir" id="ename"><br>
+        <label for="aa">Brief Write up</label><br>
+        <input style="height: 80px" type="text" [(ngModel)]="company.briefWriteUp" name="fir" id="aa"><br>
+        <label for="bb">Stock Code</label><br>
+        <input type="text" [(ngModel)]="company.stockCode" name="fir" id="bb"><br><hr>
+        <input class="btn btn-success" type="submit" (click)="addCompany(company)">
+      </form>
+    </div>
+  </div>
+
