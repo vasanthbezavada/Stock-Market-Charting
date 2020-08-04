@@ -23,7 +23,7 @@ const routes: Routes = [
   {
     path: 'admin', component: AdminComponent,
     children: [
-      { path: '', component: UploadComponent },
+      { path: '', component: ListCompanyComponent },
       { path: 'upload', component: UploadComponent },
       { path: 'add-company', component: AddCompanyComponent },
       { path: 'update-company', component: UpdateCompanyComponent },
@@ -38,7 +38,7 @@ const routes: Routes = [
       { path: '', component: DetailsComponent },
       { path: 'details', component: DetailsComponent},
       { path: 'update-user', component: UpdateDetailsComponent},
-      
+
       { path: 'manage-ipo', component: ManageIpoComponent},
       { path: 'compare-details', component: CompareDetailsComponent }
     ]
