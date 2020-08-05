@@ -27,7 +27,7 @@ export class SignInComponent implements OnInit {
         this.message = 'in correct user name or password';
       }
 
-      }, error => {console.log(error); this.message = 'Incorrect user name or password'; });
+      }, error => {console.log(error); this.message = ''; alert('Invalid user name or password'); });
 
 
   }

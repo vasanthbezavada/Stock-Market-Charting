@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SignInComponent } from './common/sign-in/sign-in.component';
 import { AdminComponent } from './admin/admin/admin.component';
-import { AddCompanyComponent } from './admin/add-company/add-company.component';
-import { UpdateCompanyComponent } from './admin/update-company/update-company.component';
 import { AddStockExchangeComponent } from './admin/add-stock-exchange/add-stock-exchange.component';
 import { UserComponent } from './user/user/user.component';
 import { CompareDetailsComponent } from './user/compare-details/compare-details.component';
@@ -25,8 +23,6 @@ const routes: Routes = [
     children: [
       { path: '', component: ListCompanyComponent },
       { path: 'upload', component: UploadComponent },
-      { path: 'add-company', component: AddCompanyComponent },
-      { path: 'update-company', component: UpdateCompanyComponent },
       { path: 'add-stock-exchange', component: AddStockExchangeComponent },
       { path: 'list-company', component: ListCompanyComponent },
       { path: 'update-ipo', component: UpdateIpoComponent }

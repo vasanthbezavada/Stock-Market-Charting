@@ -1,4 +1,4 @@
-<div class="card shadow">
+<div class="card shadow" style="width: 60%;float: left">
     <p class="h4 card-header">Add New Stock Exchange</p>
     <div class="card-body bg-light">
         <p class="card-text h6">Please fill the details:</p>
@@ -7,7 +7,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">Stock Exchange Name</span>
                 </div>
-                <input type="text" class="form-control" />
+                <input type="text" [(ngModel)]="exchange.stockExchange" class="form-control" name="ex" />
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -15,21 +15,34 @@
                 </div>
                 <textarea class="form-control" aria-label="With textarea"></textarea>
             </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Address</span>
-                </div>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
-            </div>
+
             <div class="d-flex no-gutters">
                 <div class="col">
-                    <button type="submit" class="btn btn-success">Add</button>
+                    <button type="submit" class="btn btn-success" (click)="add()">Add</button>
                     <button type="reset" class="btn btn-danger ml-2">Reset</button>
                 </div>
-                <div>
-                    <button (click)="backClicked()" class="btn btn-secondary">Back</button>
-                </div>
+
             </div>
         </form>
     </div>
+</div>
+<div style="width: 30%;float: right"  >
+  <h1>Exsisting Exchanges </h1>
+  <table class="table table-striped " style="float: left;">
+    <thead>
+    <tr>
+      <th>S no</th>
+      <th>Name</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ex of exchangeList">
+      <td>{{ex.id}}</td>
+      <td>{{ex.stockExchange}}</td>
+      <!-- <td class="text-center"><button class="btn btn-danger btn-xs" (click)="delteUser(user.id)"><span class="glyphicon glyphicon-remove"></span> Delete</button></td> -->
+    </tr>
+    </tbody>
+  </table>
+
 </div>

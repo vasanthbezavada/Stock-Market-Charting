@@ -2,12 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin/admin.component';
-import { AddCompanyComponent } from './admin/add-company/add-company.component';
-import { UpdateCompanyComponent } from './admin/update-company/update-company.component';
 import { AddStockExchangeComponent } from './admin/add-stock-exchange/add-stock-exchange.component';
 import { SignInComponent } from './common/sign-in/sign-in.component';
 import { HeaderComponent } from './common/header/header.component';
@@ -28,8 +25,6 @@ import { IpoListComponent } from './admin/ipo-list/ipo-list.component';
   declarations: [
     AppComponent,
     AdminComponent,
-    AddCompanyComponent,
-    UpdateCompanyComponent,
     AddStockExchangeComponent,
     SignInComponent,
     HeaderComponent,
